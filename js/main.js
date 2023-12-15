@@ -28,6 +28,7 @@
 
         $WIN.on('load', function() {
 
+
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
@@ -424,6 +425,12 @@
         } 
 
     };
+
+    // Add an event listener to the button
+     document.getElementById("portfolioButton").addEventListener("click", function() {
+    // Replace "portfolio.html" with the actual filename or URL of your portfolio page
+    window.location.href = "form.html";
+  });
 
 
    /* Back to Top
