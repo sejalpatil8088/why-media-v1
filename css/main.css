@@ -74,16 +74,18 @@ html, body {
 }
 
 body {
+    
     background: black;
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
     line-height: 1.765;
-    color: #757575;
+    color: white;
     margin: 0;
     padding: 0;
 }
+
 
 
 /* ------------------------------------------------------------------- 
@@ -117,18 +119,22 @@ a:hover, a:active {
     background-color: #fff;
     color: #000000;
 }
+
 .main-heading > h1{
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
+     font-size: 70px;
+     font-family: 'Abril Fatface', serif;  ;
+     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-style: bold;
     text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    margin-top: 30px;
+  
+    
 
     
 }
-.video-carousel{
+
+/* .video-carousel{
     display: flex;
     width: 300%; 
     transition: transform 0.5s ease-in-out;
@@ -136,19 +142,20 @@ a:hover, a:active {
 .video{
     width: 100%;
     height: 100vh;
-}
+} */
 
-.carousel-wrapper {
+ .carousel-wrapper {
     
     height: 316px;
     position: relative;
     width: 560px;
     display: block;
-    /* margin: 50px auto ; */
+    margin: 50px auto ;
     border: 2px solid black;
-    margin: 10px 280px;
-    
-  }
+     /* margin: 0% 290px; */
+     margin: 0% 290px;
+     margin-bottom: 10px;
+  } 
   
   .carousel-item {
     position: absolute;
@@ -156,7 +163,7 @@ a:hover, a:active {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 25px 50px;
+    padding: 15px 50px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
@@ -164,15 +171,15 @@ a:hover, a:active {
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 16px;
-
+    padding: 14px;
+   
     
   }
   .arrow-prev {
     right:280px ;
     position: relative;
     /* position: absolute; */
-    bottom:180px ;
+    bottom:170px ;
     transform: translateY(-50%) rotate(135deg);
     
     
@@ -181,8 +188,8 @@ a:hover, a:active {
   .arrow-next {
     
     position: relative;
-    left: 800px;
-    bottom: 180px;
+    left: 790px;
+    bottom: 170px;
     /* top: 50%; */
     transform: translateY(-50%) rotate(-45deg);
   }
@@ -216,6 +223,146 @@ a:hover, a:active {
     z-index: 3;
     opacity: 1;
   } 
+  .main-heading2{
+    background-color: red;
+    color: #fff;
+  }
+  .sub-heading > h1{
+    font-style: bold;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 130px;
+    padding-bottom: 10px;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .inner{
+    max-width: 1400px;
+    margin:0% ;
+  }
+  /* our team */
+  img{
+    width: 100%;
+    height: 60vh;
+    
+  }
+  .team-member > h6{
+    margin: 0%;
+   
+  }
+  
+.heading p{
+    font-size: 25px;
+}
+.team-wrap{
+    width: 22%;
+    margin-top: 120px;
+}
+/* .team-img img{
+    -webkit-transition: all .2s ease-in-out ;
+    overflow: hidden;
+    width: 100%;
+} */
+.team-member, .team-img{
+    position: relative;
+    overflow: hidden;
+}
+.team-title{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  top: 5px;
+  color: #fff;
+  font-style: bold;
+ 
+   
+} 
+
+.overlay{
+    background-color: rgba(20,20,20,0.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out ;
+}
+.team-details{
+    opacity: 0;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    padding: 5%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    -webkit-transition: all 2s ease-in-out ;
+}
+.team-details p {
+    color: #fff;
+}
+.team-details h1{
+   
+    color: #fff;
+    padding: 10px;
+    background-color: #000000;
+    margin-bottom: 110px;
+    margin-left:50px ;
+}
+
+.team-img:hover .team-details{
+    opacity: 1;
+    margin-top: -80px;
+}
+.team-img:hover .overlay{
+    opacity: 1;
+}
+.socials a{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+}
+.socials{
+    position: relative;
+    
+}
+.socials i{
+    list-style: none;
+    line-height: 37px;
+    color: #616161;
+    font-size: 13px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+}
+.team-details .socials i{
+    color: #fff;
+    /* margin: 30px; */
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+.socials a:hover i{
+    color: rgb(17,13,13);
+    background-color: #fff;
+}
+  /* .images{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+  
+
 /* .slider_wrapper{
    display: grid;
    grid-template-columns: repeat(3 , 1fr);
@@ -1647,10 +1794,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 9px 0 0 0;
     padding: 0;
     outline: 0;
-    border: none;
+    border: none
     width: 120px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+.header-logo a img{
+    height: 60px;
+    width: 120px;
 }
 
 
@@ -1732,12 +1883,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #FFFFFF;
 }
 
-.header-nav__social {
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    font-size: 1.8rem;
-}
+
 
 .header-nav__social li {
     margin-right: 12px;
@@ -1756,7 +1902,29 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav__social li:last-child {
     margin: 0;
-}
+} */
+.header-nav__social {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .header-nav__social li {
+    margin-right: 12px;
+    padding-left: 0;
+    display: inline-block;
+  }
+
+  .header-nav__social li a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+
+  .header-nav__social li a:hover,
+  .header-nav__social li a:focus {
+    color: black;
+  }
 
 .header-nav__close {
     display: block;
@@ -2924,8 +3092,10 @@ html.no-csstransitions .home-content__main {
     color: #757575;
     position: relative;
 }
-
-
+.col-full .clients .clients__slide img{
+   height: 100%;
+   width: 100%;
+}
 /* ------------------------------------------------------------------- 
  * ## slider
  * ------------------------------------------------------------------- */
